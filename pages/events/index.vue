@@ -3,18 +3,21 @@
   </template>
   
   <script setup>
-  import { ref, onMounted } from 'vue';
+  import { ref, onMounted, onUnmounted } from 'vue';
   import { useThree } from '~/composables/useThree';
   
-
   const threeContainer = ref(null);
-  
-  const { init } = useThree();
+  const { init, cleanup } = useThree();
   
   onMounted(() => {
+    // Ensure code runs only after the component is mounted in the client-side environment
     if (threeContainer.value) {
       init(threeContainer.value);
     }
+  });
+  
+  onUnmounted(() => {
+    cleanup();
   });
   </script>
   
