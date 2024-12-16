@@ -4,7 +4,9 @@ console.log(nuxt);
 nuxt.provide('nation', (name) => `Hello ${name}!`);
 console.log(nuxt.$nation('immanuel'));
 </script> -->
-
+<script setup>
+    const $route = useRoute();
+</script>
 <template>
     <div
         class="p-6 text-white hover:bg-gradient-to-r from-slate-500  via-purple-500 to-zinc-600 shadow-lg shadow-zinc-800 m-9 rounded-lg bg-slate-500">

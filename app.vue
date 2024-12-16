@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-slate-900 h-screen text-white">
+  <div class="bg-white-900 h-screen text-black">
     <NuxtLayout>
 
       <NuxtPage ref="page" />
-      <Header />
+      
     </NuxtLayout>
   </div>
 </template>
