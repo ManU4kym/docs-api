@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[url('assets/images/lava.jpg')] bg-cover bg-center h-screen-full md:h-screen-full text-white font-light">
+    <div class="bg-[url('assets/images/lava.jpg')] bg-cover bg-center h-screen md:h-screen text-white font-light">
         <header class="justify-between py-6 px-9 flex shadow-lg shadow-black    mx-auto  ">
             <NuxtLink to="/" class="logo py-0 text-sm md:text-lg">Kimmiy</NuxtLink>
 
@@ -14,6 +14,11 @@
 
             <slot />
         </main>
+
+        <footer class="fixed bottom-0 left-0 w-full bg-zinc-800 text-white text-center p-4">
+            Contact
+        </footer>
+
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-7">
+  <div class="product p-7">
     <h1>{{ name || 'Vendor' }}</h1>
     <div>
       <div class="grid grid-cols-1 gap-5 m-8 sm:grid-cols-2 md:grid-cols-5 shadow-lg border p-5 tracking-normal">
@@ -15,3 +15,16 @@ import ProductCard from "../../components/ProductCard.vue";
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
 const name = ref("Vendor");
 </script>
+
+
+<style scoped>
+.product {
+  min-height: 100vh;
+  background: url('/assets/images/lava.jpg');
+  background-size: cover;
+}
+
+.content {
+  padding: 2rem;
+}
+</style>
