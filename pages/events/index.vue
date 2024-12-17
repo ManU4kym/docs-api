@@ -10,7 +10,8 @@
 </template>
 
 <script setup>
-import ProductCard from "@/components/ProductCard.vue";
+import ProductCard from "../../components/ProductCard.vue";
+
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
 const name = ref("Vendor");
 </script>
