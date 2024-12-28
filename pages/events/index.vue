@@ -16,6 +16,14 @@ const { data: products } = await useFetch("https://fakestoreapi.com/products");
 
 
 const name = ref("Vendor");
+
+useHead({
+  title: 'Merchendise',
+  meta: [
+    { name: 'viewport', content: 'Our products' },
+
+  ],
+})
 </script>
 
 

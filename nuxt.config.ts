@@ -10,6 +10,16 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
 
+  app: {
+    head: {
+      title: 'Product API',
+      meta: [
+        { name: 'viewport', content: 'KILa Kitu Nuxt' },
+
+      ],
+    }
+  },
+
   alias: {
     "@": resolve(__dirname, "/")
   },
