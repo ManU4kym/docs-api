@@ -16,6 +16,9 @@ const uri = 'https://fakestoreapi.com/products/' + id;
 
 const { data: product } = await useFetch(uri);
 
-</script>
+if (!product.value) {
+    throw createError({ statusCode: 404, statusMessage: 'Product currently unavailable' });
+}
 
+</script>
 <style scoped></style>
