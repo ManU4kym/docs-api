@@ -14,7 +14,7 @@
 <style lang="css" scoped></style>
 <script setup>
 
-import BtnCounter from '../components/BtnCounter.vue';
+
 
 import ThreeD from '../components/ThreeD.client.vue';
 const { data: produce } = useFetch("https://fakestoreapi.com/products/")
