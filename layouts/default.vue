@@ -5,9 +5,8 @@
 
             <nav class="grid grid-cols-4  gap-1 px-7 md:flex md:gap-4 text-sm md:text-base">
                 <NuxtLink to="/">Home</NuxtLink>
-                <NuxtLink to="/events">About</NuxtLink>
-                <NuxtLink to="/events/id">Work</NuxtLink>
-                <NuxtLink to="/contact">Contact</NuxtLink>
+                <NuxtLink to="/events">Product</NuxtLink>
+                <NuxtLink to="/about">About</NuxtLink>
             </nav>
         </header>
         <main>
