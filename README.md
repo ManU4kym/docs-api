@@ -1,98 +1,42 @@
-It looks like there is no existing `README.md` file. Here is a template for a Nuxt full-stack project:
+# Nuxt 3 Minimal Starter
 
-```markdown
-# Nuxt Full Stack Project
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Overview
+## Setup
 
-This project is a full-stack application built using Nuxt.js, providing a robust framework for server-side rendered (SSR) Vue.js applications.
+Make sure to install the dependencies:
 
-## Getting Started
+```bash
+# yarn
+yarn install
 
-### Prerequisites
+# npm
+npm install
 
-- Node.js (16.x or higher recommended)
-- npm (8.x or higher recommended)
+# pnpm
+pnpm install --shamefully-hoist
+```
 
-### Installation
+## Development Server
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/ManU4kym/docs-api.git
-   cd docs-api
-   ```
+Start the development server on http://localhost:3000
 
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-
-### Development
-
-To start the development server, run:
-```sh
+```bash
 npm run dev
 ```
 
-This will start the Nuxt development server, usually accessible at `http://localhost:3000`.
+## Production
 
-### Build
+Build the application for production:
 
-To build the application for production, run:
-```sh
+```bash
 npm run build
 ```
 
-To start the production server, run:
-```sh
-npm run start
+Locally preview production build:
+
+```bash
+npm run preview
 ```
 
-### Linting
-
-To lint your code, run:
-```sh
-npm run lint
-```
-
-### Testing
-
-To run tests, use:
-```sh
-npm test
-```
-
-## Project Structure
-
-- `assets`: Contains uncompiled assets such as SCSS, images, or fonts.
-- `components`: Vue.js components.
-- `layouts`: Layouts for the application.
-- `middleware`: Custom middleware.
-- `pages`: Application views and routes.
-- `plugins`: JavaScript plugins.
-- `static`: Static files.
-- `store`: Vuex store configuration.
-
-## Environment Variables
-
-Create a `.env` file in the root directory to manage environment variables:
-
-```env
-API_URL=https://api.example.com
-```
-
-## Contributing
-
-Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [Nuxt.js](https://nuxtjs.org/)
-- [Vue.js](https://vuejs.org/)
-```
-
-You can create this `README.md` file in your repository.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
