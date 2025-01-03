@@ -1,9 +1,9 @@
 <template>
     <div>
-        <NavBar />
 
-        <div class="mx-auto mt-4 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16 w-3/5">
-            <div class="mt-32 flex">
+
+        <div class=" mx-auto mt-4 max-w-7xl space-y-4 px-4 xs:px-8 sm:px-10 lg:px-16 pb-16 w-3/5">
+            <div class="mt-32   space-y-3 lg:flex ">
                 <!-- CAR SIDE BAR -->
                 <CarSideBar />
                 <!-- CAR SIDE BAR -->
@@ -20,17 +20,17 @@
 const route = useRoute();
 
 
-    useHead({
-        title: `${route.params.make ? titleCase(route.params.make) : 'Cars '} in ${titleCase(route.params.city)}`
-    })
+useHead({
+    title: `${route.params.make ? titleCase(route.params.make) : 'Cars '} in ${titleCase(route.params.city)}`
+})
 
 
-    function titleCase(str) {
-        return str.replace(
-            /\w\S*/g,
-            function(txt) {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toUpperCase();
-            }
-        );
-    }
+function titleCase(str) {
+    return str.replace(
+        /\w\S*/g,
+        function (txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toUpperCase();
+        }
+    );
+}
 </script>
